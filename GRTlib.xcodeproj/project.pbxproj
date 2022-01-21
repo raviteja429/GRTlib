@@ -19,6 +19,7 @@
 		82CE1ADA279AEC84004A35BD /* GRTlibExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE1AD9279AEC84004A35BD /* GRTlibExampleTests.swift */; };
 		82CE1AE4279AEC84004A35BD /* GRTlibExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE1AE3279AEC84004A35BD /* GRTlibExampleUITests.swift */; };
 		82CE1AE6279AEC84004A35BD /* GRTlibExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE1AE5279AEC84004A35BD /* GRTlibExampleUITestsLaunchTests.swift */; };
+		82CE1AF1279AEF45004A35BD /* GRTlib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE1AF0279AEF45004A35BD /* GRTlib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		82CE1ADF279AEC84004A35BD /* GRTlibExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRTlibExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CE1AE3279AEC84004A35BD /* GRTlibExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRTlibExampleUITests.swift; sourceTree = "<group>"; };
 		82CE1AE5279AEC84004A35BD /* GRTlibExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRTlibExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		82CE1AF0279AEF45004A35BD /* GRTlib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRTlib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		82CE1A9A279AEAC1004A35BD = {
 			isa = PBXGroup;
 			children = (
+				82CE1AF0279AEF45004A35BD /* GRTlib.swift */,
 				82CE1AA6279AEAC1004A35BD /* GRTlib */,
 				82CE1AB0279AEAC2004A35BD /* GRTlibTests */,
 				82CE1AC1279AEC82004A35BD /* GRTlibExample */,
@@ -291,6 +294,7 @@
 				TargetAttributes = {
 					82CE1AA3279AEAC1004A35BD = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					82CE1AAB279AEAC2004A35BD = {
 						CreatedOnToolsVersion = 13.1;
@@ -376,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82CE1AF1279AEF45004A35BD /* GRTlib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +584,7 @@
 		82CE1AB7279AEAC2004A35BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -598,6 +604,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -606,6 +613,7 @@
 		82CE1AB8279AEAC2004A35BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -633,6 +641,7 @@
 		82CE1ABA279AEAC2004A35BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -653,6 +662,7 @@
 		82CE1ABB279AEAC2004A35BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
